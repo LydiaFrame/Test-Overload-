@@ -13,22 +13,27 @@ public class TestOverload {
     public static void main(String[] args) {
         // Call methods to get square roots
         double intResult1 = sqrt(6);
-        double intResult2 = sqrt(8);
+        double intResult2 = sqrt(9);
 
         double floatResult1 = overload(6.0f);
-        double floatResult2 = overload(8.0f);
+        double floatResult2 = overload(9.0f);
 
         // Print results
         System.out.println("Integer results:");
         System.out.println("Square root of 6 = " + intResult1);
-        System.out.println("Square root of 8 = " + intResult2);
+        System.out.println("Square root of 9 = " + intResult2);
+
+        System.out.println("");
 
         System.out.println("Float results:");
         System.out.println("Square root of 6.0f = " + floatResult1);
-        System.out.println("Square root of 8.0f = " + floatResult2);
+        System.out.println("Square root of 9.0f = " + floatResult2);
+
+        System.out.println("");
 
         // Print square roots using void method
-        method(6, 8);
+        System.out.println("Void merthod:");
+        method(6, 9);
     }
 
     // Method to return the square root of an integer
